@@ -9,14 +9,6 @@ function gameResizeHandler() {
     window.location.reload();
 }
 
-function initCAGame() {
-    // without setting the domain here we will have CORS error when accessing the parents variables
-    var arrDomain = location.hostname.split('.');
-    if (arrDomain.length > 2 && !/amazonaws/.test(location.hostname) && !/(?:[0-9]{1,3}\.){3}[0-9]{1,3}/.test(location.hostname)) {
-        arrDomain.shift();
-        document.domain = arrDomain.join('.');
-    }
-
     // set retry loader hook
     window.preloader = {};
     var fileCounter = 0;
