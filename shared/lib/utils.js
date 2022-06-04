@@ -79,7 +79,6 @@ function findScoreIndex(leaderboardText, scoreAttribute) {
     return scoreIndex;
 }
 
-initCAGame();
 
 // retry hooks
 function initRetryLoaders(game, context, cb) {
