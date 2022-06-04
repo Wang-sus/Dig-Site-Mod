@@ -27,7 +27,7 @@ function gameResizeHandler() {
 
 
     window.addEventListener('resize', gameResizeHandler, false);
-}
+}}
 
 function updateParentLoader(percent) {
     if (parent.window.gameBridge) {
